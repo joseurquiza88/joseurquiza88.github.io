@@ -1,0 +1,512 @@
+                                
+/*Seccion principal */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #c0c0ec;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Barra de navegacion */
+/* Alineacion derecha de la barra de navegacion */
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+} 
+/* Tipo y tamaño de letra de la navbar */
+.nav-item a{
+    font-size: 1rem;
+    margin-right: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #f5f6f7;
+    
+}
+/* Fondo de navbar */
+.seccion-oscura-navbar{
+    background-image:linear-gradient(
+        0deg,
+        rgba(80, 67, 119, 0.5),
+        rgba(94, 74, 160, 0.5)
+    )
+    ,url("imagenes/fondo_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Color de las 2 secciones claras y oscura */
+.seccion-oscura{ 
+    color: #f5f6f7;
+    background-color: #1b1b32;
+    /* box-shadow: 0px 0px 0px 1px #282727; */
+}
+.seccion-clara{
+    color: rgb(241, 234, 234);
+    background-color: #2e2e54;  
+    box-shadow: 0px 1px 6px 1px rgb(17, 17, 18);
+   
+}
+
+/* Cambiar tamaño del icono de boostrap */
+.bi-briefcase{
+    font-size:35px;
+    color: rgb(180, 185, 192);
+}
+.nav-item a:hover{
+    color: #04080b;
+    background-color:#373693 ;
+    border-radius: 5%;
+}
+
+/* Seccion Sobre mi*/
+
+/* Cambiar tamaño del icono de boostrap */
+.bi-person-circle{
+    font-size:150px;
+    color: rgb(180, 185, 192);
+}
+/* Tamaño y tipo de letra */
+.nombre{
+    font-family: 'Quicksand', sans-serif;
+    color:#ededf2;
+    font-size: 50px;
+}
+
+.descripcion{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(183, 146, 247);
+    font-size: 25px;
+
+}
+
+/* Justificado del texto sobre mi */
+.centrado {
+
+    text-align: justify ;
+    font-style: italic;
+    padding-top: 10px;
+    
+}
+
+/* Titulos de las secciones */
+.seccion-titulo{
+    font-size: 2rem;
+    font-family: 'Andika', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+/* Proyectos realizados */
+.seccion-descripcion{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(242, 240, 240);
+    font-size: 20px;
+    text-align: center;
+}
+
+.seccion-herramientas{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(249, 247, 247);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.seccion-herramientas .container{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.proyectos-recientes img{
+    height:250px;
+    width: 300px;
+    display:block; 
+    transition: all 0.2s ease;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #606b79;
+    border-radius: 20px ;
+    border: #100f0f 2px solid;
+    background-size: cover;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.texto-proyecto{
+    font-size:13px;
+    font-family: 'Quicksand', sans-serif;
+    text-align:unset;
+    margin: 1px;
+
+}
+
+
+.proyecto{
+    position: relative;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.iconos-contenedor i{
+    margin: 2 2 5 10;
+    margin: 100px;
+    color: black;
+    font-size: 30px;
+    margin: 2 2 5 10;
+}
+
+.proyectos-contenedor{
+     padding: 35px;
+     
+ }
+
+ .btn-info {
+    font-size: 1.1rem;
+    margin-left: 580px;
+    font-weight:bold ;
+    background-color:white ;
+
+}
+
+button .color{
+    font-size: 1.1rem;
+    margin-left: 580px;
+    font-weight:bold ;
+    background-color:white ;
+
+}
+
+
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: #fbf5fa;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+    border: #100f0f 2px solid;
+
+
+}
+.experiencia-titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0; 
+}
+
+.badges-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #dbdaea4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease-in;
+    background-color: rgb(41, 60, 89);
+    border-radius: 10px;
+    box-shadow: 50px 50px 50px 50px linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.949),
+        rgba(16, 16, 16, 0.5)
+    )
+
+}
+
+.proyectos-contenedor .columna{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease-in;
+   
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 10px linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.949),
+        rgba(16, 16, 16, 0.5)
+        
+    );
+}
+
+
+
+.sobre-mi .columna{
+    margin-top: -5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease-in;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px rgb(212, 211, 218);
+    background-image:linear-gradient(
+        0deg,
+        rgba(80, 67, 119, 0.5),
+        rgba(94, 74, 160, 0.5)
+    )
+    ,url("imagenes/fondo_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.experiencia .columna:hover{
+    color: #212121;
+    background-color:#b3b3cf ;
+}
+
+/*Contacto*/
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 5px;
+}
+
+.contacto .rectangulo{
+    margin-top: -2rem;
+    background-color: rgb(40, 33, 82);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+/*Selecciono todos los de la clase contacto y objetos del tipo boton*/
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+/* Seccion boton cv */
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.cv button{
+    color: white;
+    font-weight: bold;
+    background-color:  rgb(27, 46, 73);
+    border: 2px solid  #8080804d;
+
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.cv button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.container .cv{
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Boton contacto */
+.contacto button:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.contacto button:hover i{
+    color: black;
+
+}
+/*Footer*/
+
+footer{
+    min-height: 500px;
+    border: #b3b3cf;
+}
+
+.footer-icono{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: #e6e6ed;
+}
+.seccion-footer{
+    box-shadow: 0px 1px 4px 1px rgb(212, 211, 218);
+    background-image:linear-gradient(
+        0deg,
+        rgba(80, 67, 119, 0.5),
+        rgba(94, 74, 160, 0.5)
+    )
+    ,url("imagenes/fondo_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -3rem;
+   
+}
+/* Iconos redes sociales */
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 2rem;
+    transition: all 0.2s ease-in;
+    padding: 10px;
+
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+    
+}
+/* Copyright */
+.derechos-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+
+
+
+
+/* Proyectos recientes */
+.proyecto:hover .overlay{
+    opacity: 1;
+   
+} 
+
+.proyecto:hover img{
+    opacity: 0.2;
+    
+}
+/* pruebas estilos */
+
+
+
+.iconos-conocimiento p{
+    margin-left:400px;
+    margin-right:0px;
+    text-align: justify ;
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10;
+    color: #f5f6f7;
+}
+
+.iconos-conocimiento img{
+    height: 60px;
+    width: 70px;
+    display:block; 
+    transition: all 0.2s ease;
+
+    justify-content: center;
+    margin: auto;
+}
+
+
+ .iconos-conocimiento{
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in-out;
+    padding-right: 10px ;
+    margin-right: 10px;
+    padding-left: 100px ;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+
+
+.icono-conocimiento-hover img:hover{
+    color: #f5f6f7;
+    background-color:#fcfcfd;
+    border-radius: 45%;
+    border:#c0c0ec 2px;
+    padding: 5px;
+}
+
+.iconos-conocimiento {
+    color: #10375f;
+    background-color:rgb(52, 52, 74);
+
+    border:#c0c0ec 2px;
+    padding: 30px;
+}
+
+
+
+
+
+.iconos-conocimiento-section{
+ 
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 60px;
+}
+
+.iconos-conocimiento-section .container{
+ 
+    padding-bottom: 60px;
+}
+
+
+/*Dispositivos adaptables-*/
+/*Cambio las caracteristicas de la pagina para que se vea en distintos dispositivos*/
+/*Logo de la navbar: Con esto lo eliminamos para dispositivos mas pequeños*/
+
